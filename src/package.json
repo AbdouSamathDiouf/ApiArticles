@@ -13,7 +13,7 @@
       "mongodb",
       "mongoose"
     ],
-    "author": "Votre Nom",
+    "author": "Abdou",
     "license": "MIT",
     "dependencies": {
       "express": "^4.17.1",

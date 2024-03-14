@@ -1,0 +1,5 @@
+# Fichiers spécifiques à l'environnement local
+.env
+
+# Fichiers spécifiques à l'environnement de développement
+node_modules/

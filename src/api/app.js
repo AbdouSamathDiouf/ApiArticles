@@ -34,12 +34,13 @@ app.use((err, req, res, next) => {
 });
 
 // Connexion à la base de données MongoDB
-mongoose.connect('mongodb://localhost:27017/my_database', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://root:example@mongo:27017/', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
     // Démarrer le serveur Express
-    app.listen(8888, () => {
-      console.log('Server started on port 3000');
+    const PORT = process.env.PORT || 8888;
+    app.listen(PORT, () => {
+      console.log(`Server started on port ${PORT}`);
     });
   })
   .catch((error) => {
